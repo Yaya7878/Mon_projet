@@ -1,0 +1,63 @@
+/*Réglages généraux*/
+@font-face {
+    font-family: 'andromeda';
+    src: url("./andromeda.otf");
+}
+
+@font-face {
+    font-family: 'astonpoliz';
+    src: url(./astonpoliz.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'astonpoliz', sans-serif;
+}
+/*header*/
+h1 {
+    color:#73c2aa;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px black;
+    font-family: 'andromeda', sans-serif;
+}
+
+#header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #041d15;
+    color: #ffffff;
+    margin: 0px;
+    padding: 30px;
+    width: 100vw;
+    height: 20vh;
+}
+
+#header-logo {
+    width: 25vw;
+}
+
+#header-titre {
+    width: 25vw;
+}
+
+#header-login {
+    width: 25vw;
+}
+
+#logo {
+    height: 16vh;
+}
+
+/*mise en forme de formulaire*/
+
+input, label {
+    display: block;
+    margin-top: 3px;
+}
