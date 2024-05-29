@@ -13,6 +13,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --color-bs :#003C43;
+    --color-bm :#135D66;
+    --color-bc :#77B0AA;
+    --color-wh :#E3FEF7;
 }
 
 body {
@@ -20,7 +24,7 @@ body {
 }
 /*header*/
 h1 {
-    color:#73c2aa;
+    
     font-size: 2.5rem;
     text-shadow: 1px 1px 2px black;
     font-family: 'andromeda', sans-serif;
@@ -31,8 +35,8 @@ h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #041d15;
-    color: #ffffff;
+    background-color: var(--color-bs);
+    color: var(--color-bc);
     margin: 0px;
     padding: 30px;
     width: 100vw;
@@ -45,19 +49,87 @@ h1 {
 
 #header-titre {
     width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 #header-login {
     width: 25vw;
+    border: var(--color-bc) solid 3px;
+    
+    border-radius: 5px;
+    padding: 10px;
 }
 
 #logo {
     height: 16vh;
+    display: block;
 }
-
+/*Barre sous le header avec image de fond*/
+#header-bottom {
+    width: 100vw;
+    height: 10vh;
+    background-image: url('../assets/library.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: center;
+    border-top: var(--color-bs) solid 3px;
+    border-bottom: var(--color-bs) solid 3px;
+}
 /*mise en forme de formulaire*/
 
 input, label {
     display: block;
     margin-top: 3px;
+    width: 100%;
 }
+/*partie centrale*/
+#central {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+/*Menu*/
+nav {
+    width: 20vw;
+    height: 60vh;
+    background-color: var(--color-bc);
+    border-radius: 0 0 15px 15 px;
+    box-shadow: -2px -2px 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bouton {
+    text-decoration: none;
+    color: var(--color-bm);
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: var(--color-wh);
+    display: block;
+    padding: 15px;
+    background-color: var(--color-bs);
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: black 2px 2px 10px 0;
+    transition: box-shadow 300ms; color: 1000ms ; background-color: 500ms; width 1000ms, padding 1000ms;
+}
+
+.bouton:hover {
+    box-shadow: black 7px 7px 20px 0;
+    color: var(--color-bc);
+    background-color: var(--color-bm);
+    width: 85%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+
+}
+/*le choix de site*/
