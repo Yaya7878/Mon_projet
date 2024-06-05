@@ -22,7 +22,34 @@
 body {
     font-family: 'astonpoliz', sans-serif;
 }
+h1,h2,h3,h4,h5,h6 {
+    color: var(--color-bm);
+}
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.75rem;
+}
+h4 {
+    font-size: 1.5rem;
+}
+h5 {
+    font-size: 1.25rem;
+}
+h6 {
+    font-size: 1rem;
+}
 /*header*/
+header{
+    position: fixed;
+    z-index: 10;
+    background-color: var(--color-bs);
+}
+
 h1 {
     
     font-size: 2.5rem;
@@ -35,7 +62,7 @@ h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-bs);
+    background-color: white;
     color: var(--color-bc);
     margin: 0px;
     padding: 30px;
@@ -96,6 +123,8 @@ input, label {
 }
 /*Menu*/
 nav {
+    position: fixed;
+    top: 30vh;
     width: 20vw;
     height: 60vh;
     background-color: var(--color-bc);
@@ -105,6 +134,7 @@ nav {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    z-index: 5;
 }
 
 .bouton {
@@ -120,7 +150,7 @@ nav {
     width: 80%;
     border-radius: 20px;
     box-shadow: black 2px 2px 10px 0;
-    transition: box-shadow 300ms; color: 1000ms ; background-color: 500ms; width 1000ms, padding 1000ms;
+    transition: box-shadow 300ms; color: 1000ms ; background-color: 500ms; width: 1000ms, padding 1000ms;
 }
 
 .bouton:hover {
@@ -132,4 +162,100 @@ nav {
     padding-bottom: 18px;
 
 }
+/*la partie centrale*/
+main {
+    position: relative;
+    top: 30vh;
+    left: 20vw;
+    width: 80vw;
+    padding: 30px 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+/*Texte de présentation*/
+article {
+    padding: 20px;
+    background-color: #cfcbcb;
+    box-shadow: black 5px 5px 10px 0;
+}
 /*le choix de site*/
+iframe {
+    width: 60%;
+    aspect-ratio: 16/9;
+    display: block;
+    margin: 20px auto;
+}
+
+#sites {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+}
+.site {
+    margin: 15px;
+    width: 500px;
+    max-width: 75vw;
+    min-width: 20vw;
+    aspect-ratio: 1/1;
+    border-radius: 10%;
+    box-shadow: black 2px 2px 5px 0;
+    cursor: pointer;
+}
+.nom-site {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 70%;
+    font-weight: 600;
+    color: var(--color-bs);
+    -webkit-text-stroke: white 2px;
+}
+
+#arm {
+    background-image: url('../assets/e2cArmMono.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#lil {
+    background-image: url('../assets/e2cLilleMono.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#rbx {
+    background-image: url('../assets/e2cRoubaixMono.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#sto {
+    background-image: url('../assets/e2cStoMono.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/*La sélection de livre*/
+
+/*footer*/
+
+footer {
+    position: relative;
+    top: 30vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+footer>div {
+    width: 25vw;
+    padding: 10px;
+
+}
